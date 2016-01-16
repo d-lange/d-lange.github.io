@@ -1,4 +1,4 @@
-[My site](https://d-lange.github.io/)
+[My site](https://d-lange.github.io)
 
 ###What did you learn about CSS padding, borders, and margin by doing this challenge?
 
