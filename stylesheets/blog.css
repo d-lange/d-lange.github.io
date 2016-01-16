@@ -1,0 +1,18 @@
+ol {
+  width: 120px;
+  padding-left: 45%;
+}
+
+.blogpostlist{
+  font-family: sans-serif;
+}
+
+.blogpost {
+  font-family: sans-serif;
+}
+
+.blogpost p {
+  text-align: left;
+  padding-right: 25%;
+  padding-left: 25%;
+}
