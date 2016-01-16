@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS-Concepts</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <header class="header">
+      <h1>David's Blog</h1>
+      <img src="../imgs/profilepic.jpg" alt="" />
+      <p>Web Developer and Music Composer</p>
+    </header>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="#">About Me</a>
+      <a href="index.html">Blog</a>
+      <a href="#">Projects</a>
+      <a href="#">Resume</a>
+    </nav>
+
+  <section class="blogpost">
+  <h2>DBC Phase-0 Week 3</h2>
+  <h3>CSS-Concepts: inline vs. inline-block</h3>
+  <h4>By David Lange, January 16th, 2016</h4>
+    <p>
+      In this blog post I'm going to explain the difference between displaying an inline element and an inline-block element.
+    </p>
+    <p>
+      When writing CSS code, we use the property 'display' which helps determine how an element is displayed on the page. From here, we specify whether we want whatever we're styling to be inline, block, or inline-block and with proper syntax looking like this: [display: inline;] or [display: inline-block;].
+    </p>
+    <p>
+      Visually, when displaying an inline element, it won't look like much, but having multiple elements together, you'll see they are viewed next to one another. This is because an inline element does not affect anything but what's between the tag itself.
+    </p>
+    <p>
+      A block element allows for modification of other aspects of the element such as the margin or padding from the content inside it, but it forces a new line break after the element, meaning elements can't sit next to one another. This brings us to the final way we can use the 'display' property to style our HTML.
+    </p>
+    <p>
+      An inline-block element is the best of both worlds. It combines the flexibility of an inline element and the encapsulation of a block element. This means that each element will act as a block, but be allowed to be styled next to one another. This makes styling easier and more organized.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:dlange8181@gmail.com">Email</a> <a href="https://www.linkedin.com/in/david-lange-65b82576">LinkedIn</a> <a href="https://www.facebook.com/lange.david">Facebook</a> <p>
+    <p>David Lange&copy; 2016 | NYC</p>
+  </footer>
+
+</body>
+</html>
