@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DL's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <header class="header">
+      <h1>David's Blog</h1>
+      <img src="../imgs/profilepic.jpg" alt="" />
+      <p>Fullstack Developer and Music Composer</p>
+    </header>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="#">About Me</a>
+      <a href="index.html">Blog</a>
+      <a href="#">Projects</a>
+      <a href="#">Resume</a>
+    </nav>
+
+  <section class="blogpost">
+  <h2>DBC Phase-0 Week 4</h2>
+  <h3>Ruby: Arrays and Hashes</h3>
+  <h4>January 25th, 2016</h4>
+    <p>
+      In this blog post I'm going to explain the difference between arrays and hashes in Ruby.
+    </p>
+    <p>
+      In the early stages of learning Ruby we learn about arrays and hashes and notice they both collect, store and retrieve or lookup information(data). But, what are the real differences in the way they do this?
+    </p>
+    <p>
+      Lets first look at an array. I think the best way to understand the difference is to think of an array like an ordered list of some kind. Each piece of information in an array represents the number it is within the list. The first piece of information being zero, the second, one, and so on.
+    </p>
+    <p>
+      If you have a chore list each chore would have a number, or an index, assigned to it. An example would be you'd have a chore list array: chore_list = ["Laundry", "Vacuum", "Garbage"]. "Laundry" represents 0, "Vacuum" is 1 and "Garbage" is 2. If we wanted to lookup a certain chore in our chore list array, we'd simply write chore_list[1] which would return "Vacuum".
+    </p>
+    <p>
+      A hash works similarly, but is slightly more complex in the way it stores information. A hash has a collection of data, but rather think of it as pairs of information. Each pair is represented by a key and a value. Each key must be unique and you'd use the key to retrieve the value that is paired to it.
+    </p>
+    <p>
+      Looking at the example of an array, we'd have a hash: chore_list = { "Laundry" => "Sheets", "Vacuum" => "Kitchen", "Garbage" => "Bathroom" }
+    </p>
+    <p>
+      In this example, the chore would be the key and more specifically what that chore involves is the value. You'd look up information within your hash by identifying the key: chore_list["Laundry"], which ould return "Sheets".
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:dlange8181@gmail.com">Email</a> <a href="https://www.linkedin.com/in/david-lange-65b82576">LinkedIn</a> <a href="https://www.facebook.com/lange.david">Facebook</a> <p>
+    <p>David Lange&copy; 2016 | NYC</p>
+  </footer>
+
+</body>
+</html>
