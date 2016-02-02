@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DL's Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-</head>
 
-<body>
-  <header class="header">
-      <h1>David's Blog</h1>
-      <img src="../imgs/profilepic.jpg" alt="" />
-      <p>Fullstack Developer and Music Composer</p>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="David Lange's Website">
+    <meta name="author" content="David Lange">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>David Lange | NYC</title>
+  </head>
 
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="#">About Me</a>
-      <a href="index.html">Blog</a>
-      <a href="#">Projects</a>
-      <a href="#">Resume</a>
-    </nav>
+  <body>
+
+    <section class="header">
+      <div class="logo-name">
+        <h3><a href="../index.html">DAVID LANGE</a></h3>
+      </div>
+      <div class="navigation">
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#blog-posts">BLOG</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+     </div>
+    </section>
+
+    <div class="blog-banner">
+    </div>
 
   <section class="blogpost">
-  <h2>DBC Phase-0 Week 3</h2>
   <h3>CSS-Concepts: inline vs. inline-block</h3>
+  <br>
   <h4>January 16th, 2016</h4>
+  <br>
     <p>
       In this blog post I'm going to explain the difference between displaying an inline element and an inline-block element.
     </p>
+    <br>
     <p>
       When writing CSS code, we use the property 'display' which helps determine how an element is displayed on the page. From here, we specify whether we want whatever we're styling to be inline, block, or inline-block and with proper syntax looking like this: [display: inline;] or [display: inline-block;].
     </p>
+    <br>
     <p>
       Visually, when displaying an inline element, it won't look like much, but having multiple elements together, you'll see they are viewed next to one another. This is because an inline element does not affect anything but what's between the tag itself.
     </p>
+    <br>
     <p>
       A block element allows for modification of other aspects of the element such as the margin or padding from the content inside it, but it forces a new line break after the element, meaning elements can't sit next to one another. This brings us to the final way we can use the 'display' property to style our HTML.
     </p>
+    <br>
     <p>
       An inline-block element is the best of both worlds. It combines the flexibility of an inline element and the encapsulation of a block element. This means that each element will act as a block, but be allowed to be styled next to one another. This makes styling easier and more organized.
     </p>
@@ -45,10 +57,13 @@
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
 
-  <footer>
-    <p>Contact: <a href="mailto:dlange8181@gmail.com">Email</a> <a href="https://www.linkedin.com/in/david-lange-65b82576">LinkedIn</a> <a href="https://www.facebook.com/lange.david">Facebook</a> <p>
-    <p>David Lange&copy; 2016 | NYC</p>
-  </footer>
+  <footer class="footbar">
+        <a href="mailto:dlange8181@gmail.com"><img src="../imgs/email-white.png" alt="email" class="icon-style"></a>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
+        <a href="https://github.com/d-lange"><img src="../imgs/github-white.png" alt="github" class="icon-style"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
+        <h4>Copyright &copy; David Lange 2016</h4>
+    </footer>
 
-</body>
+  </body>
 </html>

@@ -1,36 +1,119 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>David Lange</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./stylesheets/default.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="David Lange's Website">
+    <meta name="author" content="David Lange">
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <title>David Lange | NYC</title>
+  </head>
 
   <body>
-    <header class="header">
-      <h1>David Lange</h1>
-      <img src="imgs/profilepic.jpg" alt="" />
-      <p>Fullstack Developer and Music Composer</p>
-    </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About Me</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="#">Projects</a>
-      <a href="#">Resume</a>
-    </nav>
-
-    <section>
-      <h2>Welcome to my site!</h2>
-        <p>You've arrived at David Lange's website. Here, you can explore a little about him, his blog, some previous and current projects he's working on, and his resume! Enjoy!</p>
+    <section class="header">
+      <div class="logo-name">
+        <h3><a href="index.html">DAVID LANGE</a></h3>
+      </div>
+      <div class="navigation">
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#blog-posts">BLOG</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+     </div>
     </section>
 
-    <footer>
-      <p>Contact: <a href="mailto:dlange8181@gmail.com">Email</a> <a href="https://www.linkedin.com/in/david-lange-65b82576">LinkedIn</a> <a href="https://www.facebook.com/lange.david">Facebook</a> <p>
-      <p>David Lange&copy; 2016 | NYC</p>
-    </footer>
-  </body>
+    <section class="body">
+      <div class="main-display">
+      </div>
+    </section>
 
+    <div class="aboutme" id="aboutme">
+      <div id="aboutme-title">
+        <h2>ABOUT ME</h2>
+      </div>
+      <div id="aboutme-content">
+        <p>Welcome to my site! I'm currently a web development student at Dev Bootcamp in New York City. I have spent the last two and a half years working in Executive Search as a Recruiter placing executives in marketing, advertising, market research, analytics, and luxury positions. Some of my other passions include music composition and tennis.</p>
+      </div>
+      <div id="aboutme-photo-div">
+        <img src="./imgs/profilepic1.jpg" alt="david" id="aboutme-photo">
+      </div>
+    </div>
+
+      <div class="banner-1">
+      </div>
+
+    <div class="blog-posts" id="blog-posts">
+      <div id="blog-title">
+        <h1 class="name">BLOG POSTS</h1>
+      </div>
+      <div id="blog-list">
+        <ul>
+          <li><a href="blog/git.html">Version Control, Git, and GitHub</a></li>
+          <li><a href="blog/css-concepts.html">CSS-Concepts: inline vs. inline-block</a></li>
+          <li><a href="blog/arrays-hashes.html">Ruby: Arrays and Hashes</a></li>
+        <!-- <li><a href="#">Week-4 Technical Blog</a></li> -->
+        <!-- <li><a href="#">Week-5 Technical Blog</a></li> -->
+        <!-- <li><a href="#">Week-6 Technical Blog</a></li> -->
+        <!-- <li><a href="#">Week-7 Technical Blog</a></li> -->
+        <!-- <li><a href="#">Week-8 Technical Blog</a></li> -->
+        <!-- <li><a href="#">Week-9 Technical Blog</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+      <div class="banner-2">
+      </div>
+
+    <div class="projects-title" id="projects">
+      <h2 id="projects-name">PROJECTS</h2>
+    </div>
+    <div class="projects-content">
+      <p>Stay tuned...</p>
+      <p>Awesome projects coming soon</p>
+    </div>
+
+    <div class="banner-3">
+    </div>
+
+    <div class="button-center" id="resume">
+      <a href="./imgs/dlresume.pdf" id="resume-button">Download Resume</a>
+    </div>
+
+    <div class="banner-4">
+    </div>
+
+    <div class="contact-title" id="contact">
+      <h2 id="contact-name">CONTACT ME</h2>
+    </div>
+    <div class="contact-content">
+      <p>If you'd like to contact me, please fill out the form below and I will get back to you as soon as possible!</p>
+      <p>
+        <br>
+    </div>
+    <form action="http://formspree.io/dlange8181@gmail.com" method="post">
+      <fieldset id="contact-form">
+        <legend>Email Me</legend>
+        <label>Name:<br />
+        <input type="text" name="_name"></label><br />
+        <label>Email:<br />
+        <input type="text" name="_replyto"></label><br />
+        <label>Message:</label><br />
+        <textarea name="cf_message" rows="4" cols="40" id="comments"></textarea>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+      </fieldset>
+    </form>
+
+    <footer class="footbar">
+        <a href="mailto:dlange8181@gmail.com"><img src="./imgs/email-white.png" alt="email" class="icon-style"></a>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="./imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
+        <a href="https://github.com/d-lange"><img src="./imgs/github-white.png" alt="github" class="icon-style"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="./imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
+        <h4>Copyright &copy; David Lange 2016</h4>
+    </footer>
+
+  </body>
 </html>
