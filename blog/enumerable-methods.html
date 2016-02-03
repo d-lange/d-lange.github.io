@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="David Lange's Website">
+    <meta name="author" content="David Lange">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>David Lange | NYC</title>
+  </head>
+
+  <body>
+
+    <section class="header">
+      <div class="logo-name">
+        <h3><a href="../index.html">DAVID LANGE</a></h3>
+      </div>
+      <div class="navigation">
+        <a href="http://d-lange.github.io/#aboutme">ABOUT ME</a>
+        <a href="http://d-lange.github.io/#blog-posts">BLOG</a>
+        <a href="http://d-lange.github.io/#projects">PROJECTS</a>
+        <a href="http://d-lange.github.io/#resume">RESUME</a>
+        <a href="http://d-lange.github.io/#contact">CONTACT</a>
+      </div>
+     </div>
+    </section>
+
+    <div class="blog-banner">
+    </div>
+
+  <section class="blogpost">
+  <h3>Ruby: Enumerable Methods</h3>
+  <br>
+  <h4>February 2nd, 2016</h4>
+  <br>
+    <p>Let’s start with the obvious. What is an enumerable? An enumerable is a module that iterates over a collection. In other words, it can search, sort, and manipulate collections of data. There's nothing new conceptually compared to loops, arrays, and hashes, but enumerables make code shorter and most would say nicer to read.</p>
+    <br>
+    <p>Today I’m going to dissect the enumerable method, .map. The .map method accepts a block of code and affects each element in the collection that .map is invoking. Reading this back to myself, I realize it sounds like I’m describing the .each method. The key difference here is that the .map method returns that transformed collection. More specifically, the .map method returns a copy of a collection without affecting the original copy. This is known as a non-destructive method.</p>
+    <br>
+    <p>Here’s an example of what the .map method can do:</p>
+    <br>
+    <p>guitar_brands = [“gibson”, “fender”, “martin”, “taylor”, “gretsch”].map { |guitar| guitar.capitalize}</p>
+    <br>
+    <p>==> [“GIBSON”, “FENDER”, “MARTIN”, “TAYLOR”, “GRETSCH”]</p>
+    <br>
+    <p>In the example above you can see that I was given the array, or a list, that includes some colors, the names of various guitar manufacturers. By calling the .map method I iterate it to look through the array and capitalize each element in the array.</p>
+    <br>
+    <p>There are so many resources online that go into enumerables and the methods one can use. You can also go to the Ruby Docs to find out all of the enumerables that exist.</p>
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+  <footer class="footbar">
+        <a href="mailto:dlange8181@gmail.com"><img src="../imgs/email-white.png" alt="email" class="icon-style"></a>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
+        <a href="https://github.com/d-lange"><img src="../imgs/github-white.png" alt="github" class="icon-style"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
+        <h4>Copyright &copy; David Lange 2016</h4>
+    </footer>
+
+  </body>
+</html>
