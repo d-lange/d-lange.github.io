@@ -82,11 +82,13 @@
   padding-left: 10%;
   width: 40%;
   float: left;
+  margin-top: -60px;
+  line-height: 1.3em;
 }
 
 #aboutme-photo-div  {
   padding-left: 60%;
-  margin-top: -80px;
+  margin-top: -70px;
 
 }
 
