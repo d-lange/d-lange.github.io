@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="David Lange's Website">
+    <meta name="author" content="David Lange">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>David Lange | NYC</title>
+  </head>
+
+  <body>
+
+    <section class="header">
+      <div id="logo-name">
+        <h3><a href="../index.html">DAVID LANGE</a></h3>
+      </div>
+      <div id="navigation">
+        <a href="http://d-lange.github.io/#aboutme">ABOUT ME</a>
+        <a href="http://d-lange.github.io/#blog-posts">BLOG</a>
+        <a href="http://d-lange.github.io/#projects">PROJECTS</a>
+        <a href="http://d-lange.github.io/#resume">RESUME</a>
+        <a href="http://d-lange.github.io/#contact">CONTACT</a>
+      </div>
+    </section>
+
+    <div class="blog-banner">
+    </div>
+
+  <section class="blogpost">
+  <h3>Looping: Ruby vs. JavaScript</h3>
+  <br>
+  <h4>February 14th, 2016</h4>
+  <br>
+    <p>
+      In this post I'm going to discuss looping in the context of how it works in programing, specifically the differences between looping in Ruby and JavaScript.
+    </p>
+    <br>
+    <p>
+      Let's try to understand what looping means. The first word that comes to mind is: repeat. This is actually a pretty good way to describe looping. In programming, looping repeats a certain task through data that the programmer decides to 'loop' through.
+    </p>
+    <br>
+    <p>
+      In the programming language: Ruby, programmers use a method called .each. This method helps iterate through data structures. For the .each method to work, it has to iterate through a set of data. In programming we refer to a list, such as an array or a hash, which store data.
+    </p>
+    <br>
+    <p>
+      This is how the the .each method would be implemented in Ruby using an array that is storing the data:
+    </p>
+    <br>
+    <p><strong>array = ["David", "Lindsay", "Rachel"]</strong></p>
+    <br>
+    <p><strong>array.each {|i| puts i}</strong></p>
+    <br>
+    <p>The end result of this code will print out to the console:</p>
+    <br>
+    <p><strong>"David"</strong></p>
+    <p><strong>"Lindsay"</strong></p>
+    <p><strong>"Rachel"</strong></p>
+    <br>
+    <p>What the .each method is doing here is saying to look at each element inside the array and for every element, print it out to the console. The example uses "puts" rather than "print" or "p" because the array has strings as the data it's storing.</p>
+    <br>
+    <p>Now let's look at how looping works in JavaScript. Unfortunately, the .each method/function does not exist in the JavaScript language, but the language still has a way to loop through and iterate data structures. JavaScript uses something called the 'for' loop. A 'for' loop is fairly similar to the .each method but the way it is written is a little more involved compositionally.</p>
+    <br>
+    <p>This is how the 'for' loop would be implemented in JavaScript using the same array we did before:</p>
+    <br>
+    <p><strong>array = ["David", "Lindsay", "Rachel"]</strong></p>
+    <br>
+    <p><strong>for(var i=0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+  </strong></p>
+  <br>
+  <p>The 'for' loop is working using the three parameters set: the variable establishing a counter set to a number, 0 in this case (the beginning of the array), the boolean to establish as long as the counter is less than the length of the array, and to increment the counter each time to look at each element inside the array. Inside the loop we have a simple code block that just tells the computer to print out the array using the counter variable in the for loop, meaning it will print out each element inside the array one at a time.</p>
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+
+  <footer class="footbar">
+        <a href="mailto:dlange8181@gmail.com"><img src="../imgs/email-white.png" alt="email" class="icon-style"></a>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
+        <a href="https://github.com/d-lange"><img src="../imgs/github-white.png" alt="github" class="icon-style"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
+        <h4>Copyright &copy; David Lange 2016</h4>
+    </footer>
+
+  </body>
+</html>
