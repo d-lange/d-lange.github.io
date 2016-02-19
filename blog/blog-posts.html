@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <a href="../index.html" id="logo">
+      <a href="index.html" id="logo">
         <h1>David Lange</h1>
         <h2>Software Developer</h2>
       </a>
@@ -19,7 +19,7 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About</a></li>
-          <li><a href="blog-posts.html"  class="selected">Blog</a></li>
+          <li><a href="blog-posts.html" class="selected">Blog</a></li>
           <li><a href="../projects.html">Projects</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
@@ -27,14 +27,15 @@
     </header>
     <div id="wrapper">
       <section>
-        <h3 id="blog">CSS Concepts: inline vs. inline-block</h3>
-        <div id="blog-content">
-          <p>In this blog post I'm going to explain the difference between displaying an inline element and an inline-block element.</p>
-          <p>When writing CSS code, we use the property 'display' which helps determine how an element is displayed on the page. From here, we specify whether we want whatever we're styling to be inline, block, or inline-block and with proper syntax looking like this: [display: inline;] or [display: inline-block;].</p>
-          <p>Visually, when displaying an inline element, it won't look like much, but having multiple elements together, you'll see they are viewed next to one another. This is because an inline element does not affect anything but what's between the tag itself.</p>
-          <p>A block element allows for modification of other aspects of the element such as the margin or padding from the content inside it, but it forces a new line break after the element, meaning elements can't sit next to one another. This brings us to the final way we can use the 'display' property to style our HTML.</p>
-          <p>An inline-block element is the best of both worlds. It combines the flexibility of an inline element and the encapsulation of a block element. This means that each element will act as a block, but be allowed to be styled next to one another. This makes styling easier and more organized.</p>
-        </div>
+        <h3 id="blog">Blog Posts</h3>
+        <ul id="blog-list">
+          <li><a href="git.html">Version Control, Git, and GitHub</a></li>
+          <li><a href="css-concepts.html">CSS-Concepts: inline vs. inline-block</a></li>
+          <li><a href="arrays-hashes.html">Ruby: Arrays and Hashes</a></li>
+          <li><a href="enumerable-methods.html">Ruby: Enumerables.map</a></li>
+          <li><a href="ruby-classes.html">Ruby: Classes</a></li>
+          <li><a href="JavaScript.html">Looping: Ruby vs. JavaScript</a></li>
+        </ul>
       </section>
       <footer>
         <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/Linkedin.png" alt="Linkedin Logo" class="social-icon"></a>

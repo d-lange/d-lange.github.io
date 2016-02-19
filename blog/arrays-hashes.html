@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="David Lange's Website">
-    <meta name="author" content="David Lange">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title>David Lange | NYC</title>
+    <title>David Lange | Software Developer</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
   <body>
-
-    <section class="header">
-      <div id="logo-name">
-        <h3><a href="../index.html">DAVID LANGE</a></h3>
-      </div>
-      <div id="navigation">
-        <a href="http://d-lange.github.io/#aboutme">ABOUT ME</a>
-        <a href="http://d-lange.github.io/#blog-posts">BLOG</a>
-        <a href="http://d-lange.github.io/#projects">PROJECTS</a>
-        <a href="http://d-lange.github.io/#resume">RESUME</a>
-        <a href="http://d-lange.github.io/#contact">CONTACT</a>
-      </div>
-    </section>
-
-    <div class="blog-banner">
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>David Lange</h1>
+        <h2>Software Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="blog-posts.html"  class="selected">Blog</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <h3 id="blog">Ruby: Arrays and Hashes</h3>
+        <div id="blog-content">
+          <p>In this blog post I'm going to explain the difference between arrays and hashes in Ruby.</p>
+          <p>In the early stages of learning Ruby we learn about arrays and hashes and notice they both collect, store and retrieve or lookup information(data). But, what are the real differences in the way they do this?</p>
+          <p>Lets first look at an array. I think the best way to understand the difference is to think of an array like an ordered list of some kind. Each piece of information in an array represents the number it is within the list. The first piece of information being zero, the second, one, and so on.</p>
+          <p>If you have a chore list each chore would have a number, or an index, assigned to it. An example would be you'd have a chore list array: chore_list = ["Laundry", "Vacuum", "Garbage"]. "Laundry" represents 0, "Vacuum" is 1 and "Garbage" is 2. If we wanted to lookup a certain chore in our chore list array, we'd simply write chore_list[1] which would return "Vacuum".</p>
+          <p>A hash works similarly, but is slightly more complex in the way it stores information. A hash has a collection of data, but rather think of it as pairs of information. Each pair is represented by a key and a value. Each key must be unique and you'd use the key to retrieve the value that is paired to it.</p>
+          <p>Looking at the example of an array, we'd have a hash: chore_list = { "Laundry" => "Sheets", "Vacuum" => "Kitchen", "Garbage" => "Bathroom" }</p>
+          <p>In this example, the chore would be the key and more specifically what that chore involves is the value. You'd look up information within your hash by identifying the key: chore_list["Laundry"], which ould return "Sheets".</p>
+        </div>
+      </section>
+      <footer>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/Linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
+        <a href="https://github.com/d-lange"><img src="../imgs/Github.png" alt="Github Logo" class="social-icon"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/Instagram.png" alt="Instagram Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/lange.david"><img src="../imgs/Facebook.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="https://twitter.com/dlangemusic"><img src="../imgs/Twitter.png" alt="Twitter Logo" class="social-icon"></a>
+        <p>&copy; 2016 David Lange.</p>
+      </footer>
     </div>
-
-  <section class="blogpost">
-  <h3>Ruby: Arrays and Hashes</h3>
-  <br>
-  <h4>January 25th, 2016</h4>
-  <br>
-    <p>
-      In this blog post I'm going to explain the difference between arrays and hashes in Ruby.
-    </p>
-    <br>
-    <p>
-      In the early stages of learning Ruby we learn about arrays and hashes and notice they both collect, store and retrieve or lookup information(data). But, what are the real differences in the way they do this?
-    </p>
-    <br>
-    <p>
-      Lets first look at an array. I think the best way to understand the difference is to think of an array like an ordered list of some kind. Each piece of information in an array represents the number it is within the list. The first piece of information being zero, the second, one, and so on.
-    </p>
-    <br>
-    <p>
-      If you have a chore list each chore would have a number, or an index, assigned to it. An example would be you'd have a chore list array: chore_list = ["Laundry", "Vacuum", "Garbage"]. "Laundry" represents 0, "Vacuum" is 1 and "Garbage" is 2. If we wanted to lookup a certain chore in our chore list array, we'd simply write chore_list[1] which would return "Vacuum".
-    </p>
-    <br>
-    <p>
-      A hash works similarly, but is slightly more complex in the way it stores information. A hash has a collection of data, but rather think of it as pairs of information. Each pair is represented by a key and a value. Each key must be unique and you'd use the key to retrieve the value that is paired to it.
-    </p>
-    <br>
-    <p>
-      Looking at the example of an array, we'd have a hash: chore_list = { "Laundry" => "Sheets", "Vacuum" => "Kitchen", "Garbage" => "Bathroom" }
-    </p>
-    <br>
-    <p>
-      In this example, the chore would be the key and more specifically what that chore involves is the value. You'd look up information within your hash by identifying the key: chore_list["Laundry"], which ould return "Sheets".
-    </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-
-  <footer class="footbar">
-        <a href="mailto:dlange8181@gmail.com"><img src="../imgs/email-white.png" alt="email" class="icon-style"></a>
-        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
-        <a href="https://github.com/d-lange"><img src="../imgs/github-white.png" alt="github" class="icon-style"></a>
-        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
-        <h4>Copyright &copy; David Lange 2016</h4>
-    </footer>
-
   </body>
 </html>
