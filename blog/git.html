@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="David Lange's Website">
-    <meta name="author" content="David Lange">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-    <title>David Lange | NYC</title>
+    <title>David Lange | Software Developer</title>
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
   <body>
-
-    <section class="header">
-      <div id="logo-name">
-        <h3><a href="../index.html">DAVID LANGE</a></h3>
-      </div>
-      <div id="navigation">
-        <a href="http://d-lange.github.io/#aboutme">ABOUT ME</a>
-        <a href="http://d-lange.github.io/#blog-posts">BLOG</a>
-        <a href="http://d-lange.github.io/#projects">PROJECTS</a>
-        <a href="http://d-lange.github.io/#resume">RESUME</a>
-        <a href="http://d-lange.github.io/#contact">CONTACT</a>
-      </div>
-    </section>
-
-    <div class="blog-banner">
+    <header>
+      <a href="../index.html" id="logo">
+        <h1>David Lange</h1>
+        <h2>Software Developer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="blog-posts.html"  class="selected">Blog</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <h3 id="blog">Version Control, Git, and GitHub</h3>
+        <div id="blog-content">
+          <p>Let's start with Version Control. What is it? Let's simply start by looking at the phrase "Version Control." Those two words imply the controlling of versions. Well, versions of what? In our case, we are talking about organizing software that consists of many versions and modifications. This means, that you might have a version of your software from two weeks ago compared to present time. You might want to go back to check out that code. This is version control. The BENEFITS of version control as a programmer are invaluable. It allows a programmer to revert back to previous work they've done as it is all tracked by using the git commit command. Git takes a snapshot of all work that is committed. It also allows for a lot of experimentation, different versions of your code can be tested on other versions. You're also able to view the history of your code, which can be very beneficial when seeing the progress of the work. It is a very important tool as a Programmer.</p>
+          <p>Now lets move on to git. What is git? Git is a version control system. Git is what tracks the changes in your code. The way this works is that you go to the master branche of a file you want to work on (git checkout master). To make a change, you make a feature-branch (git checkout -b feature-branch) which allows you to work on the code without it affecting the original piece of code. Once finished with your work and ready to save it. You use a git command called (git add filename) and (git commit -m "commit message"). Git essentially takes a snapshot of everything you committed. Once you commit, you have now saved it to the original piece of code and your history.</p>
+          <p>Why use GitHub to store our code? That's an interesting question because we already use git. GitHub is essentially a Hub for all your work, but on the internet. You can push your work through git to gitHub for your code and files to live on the internet. It also allows for incredible collaboration globally. It allows you to look at other people's code, learn from it, play with it, tweak it, and vice-versa.</p>
+        </div>
+      </section>
+      <footer>
+        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/Linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
+        <a href="https://github.com/d-lange"><img src="../imgs/Github.png" alt="Github Logo" class="social-icon"></a>
+        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/Instagram.png" alt="Instagram Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/lange.david"><img src="../imgs/Facebook.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="https://twitter.com/dlangemusic"><img src="../imgs/Twitter.png" alt="Twitter Logo" class="social-icon"></a>
+        <p>&copy; 2016 David Lange.</p>
+      </footer>
     </div>
-
-  <section class="blogpost">
-  <h3>Version Control, Git, and GitHub</h3>
-  <br>
-  <h4>January 3rd, 2016</h4>
-  <br>
-    <p>
-      Let's start with Version Control. What is it? Let's simply start by looking at the phrase "Version Control." Those two words imply the controlling of versions. Well, versions of what? In our case, we are talking about organizing software that consists of many versions and modifications. This means, that you might have a version of your software from two weeks ago compared to present time. You might want to go back to check out that code. This is version control. The BENEFITS of version control as a programmer are invaluable. It allows a programmer to revert back to previous work they've done as it is all tracked by using the git commit command. Git takes a snapshot of all work that is committed. It also allows for a lot of experimentation, different versions of your code can be tested on other versions. You're also able to view the history of your code, which can be very beneficial when seeing the progress of the work. It is a very important tool as a Programmer.
-    </p>
-    <br>
-    <p>
-      Now lets move on to git. What is git? Git is a version control system. Git is what tracks the changes in your code. The way this works is that you go to the master branche of a file you want to work on (git checkout master). To make a change, you make a feature-branch (git checkout -b feature-branch) which allows you to work on the code without it affecting the original piece of code. Once finished with your work and ready to save it. You use a git command called (git add filename) and (git commit -m "commit message"). Git essentially takes a snapshot of everything you committed. Once you commit, you have now saved it to the original piece of code and your history.
-    </p>
-    <br>
-    <p>
-      Why use GitHub to store our code? That's an interesting question because we already use git. GitHub is essentially a Hub for all your work, but on the internet. You can push your work through git to gitHub for your code and files to live on the internet. It also allows for incredible collaboration globally. It allows you to look at other people's code, learn from it, play with it, tweak it, and vice-versa.
-    </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-
-  <footer class="footbar">
-        <a href="mailto:dlange8181@gmail.com"><img src="../imgs/email-white.png" alt="email" class="icon-style"></a>
-        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="../imgs/linkedin-white.png" alt="linkedin" class="icon-style"></a>
-        <a href="https://github.com/d-lange"><img src="../imgs/github-white.png" alt="github" class="icon-style"></a>
-        <a href="https://www.instagram.com/d_lange/"><img src="../imgs/instagram-white.png" alt="instagram" class="icon-style"></a>
-        <h4>Copyright &copy; David Lange 2016</h4>
-    </footer>
-
   </body>
 </html>
 
