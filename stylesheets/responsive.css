@@ -4,7 +4,7 @@
 TWO COLUMN LAYOUT
 **********************/
 
-  #primary {
+  /*#primary {
     width: 50%;
     float: left;
   }
@@ -12,7 +12,7 @@ TWO COLUMN LAYOUT
   #secondary {
     width: 40%;
     float: right;
-  }
+  }*/
 
 
 /***********************
@@ -98,8 +98,8 @@ PAGE: PROJECTS
     text-align: center;
   }
 
-  #projects-content {
-    text-align: center;
+  #project-list {
+    margin: 0 0 0 20.5%;
   }
 
 
