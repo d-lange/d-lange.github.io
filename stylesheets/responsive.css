@@ -37,7 +37,7 @@ PAGE: ABOUT
 
   .profile-photo {
     float: left;
-    margin: 0 5% 15% 0;
+    margin: 0 5% 35% 0;
   }
 
 }
@@ -51,7 +51,7 @@ HEADER
   nav {
     background: none;
     float: right;
-    font-size: 1.125em;
+    font-size: 1em;
     margin-right: 5%;
     text-align: right;
     width: 55%;
@@ -87,7 +87,8 @@ PAGE: BLOG
   }
 
   #blog-list {
-    margin: 0 0 0 35%;
+    /*margin: 0 0 0 35%;*/
+    margin-left: 35%;
   }
 
 /***********************
@@ -99,7 +100,8 @@ PAGE: PROJECTS
   }
 
   #project-list {
-    margin: 0 0 0 20.5%;
+    padding: 0 0 0 24%;
+    margin: 0 auto;
   }
 
 
