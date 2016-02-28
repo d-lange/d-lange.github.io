@@ -190,7 +190,8 @@ code {
 }
 
 pre {
-    background-color: #599a68;
+    /*background-color: #599a68;*/
+    background-color: #336699;
 }
 
 
@@ -236,13 +237,16 @@ body {
 
 /* green header */
 header {
-  background: #6ab47b;
-  border-color: #599a68;
+  /*background: #6ab47b;*/
+  background: #336699;
+  /*border-color: #599a68;*/
+  border-color: #264d73;
 }
 
 /* nav background on mobile */
 nav {
-  background: #599a68;
+  /*background: #599a68;*/
+  background: #264d73;
 }
 
 /* logo text */
@@ -252,7 +256,8 @@ h1, h2 {
 
 /* links */
 a {
-  color: #6ab47b;
+  /*color: #6ab47b;*/
+  color: #336699;
 }
 
 /* nav link */
@@ -262,10 +267,20 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #32673f;
+  /*color: #32673f;*/
+  color: #003366;
 }
 
 /* blog post list links */
 #blog-list a.selected, #blog-list a:hover {
+  color: #999;
+}
+
+#blog-content a.selected, #blog-content a:hover {
+  color: #999;
+}
+
+/* projects list links */
+#project-list a.selected, #project-list a:hover {
   color: #999;
 }
