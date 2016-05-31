@@ -1,42 +1,180 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <title>David Lange | Web Developer</title>
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>David Lange</h1>
-        <h2>Web Developer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog/blog-posts.html">Blog</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>David Lange</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-hand-o-right"></i>  <span class="light">David</span> Lange
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#music">Music</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Making an Impact</h1>
+                        <p class="intro-text">Full Stack Developer Based in NYC</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <div id="wrapper">
-      <section>
-        <h3 id="welcome-title">Welcome to my site!</h3>
-      </section>
-      <footer>
-        <a href="https://www.linkedin.com/in/david-lange-65b82576"><img src="imgs/linkedin.png" alt="Linkedin Logo" class="social-icon"></a>
-        <a href="https://github.com/d-lange"><img src="imgs/github.png" alt="Github Logo" class="social-icon"></a>
-        <a href="https://www.instagram.com/d_lange/"><img src="imgs/instagram.png" alt="Instagram Logo" class="social-icon"></a>
-        <a href="https://www.facebook.com/lange.david"><img src="imgs/Facebook.png" alt="Facebook Logo" class="social-icon"></a>
-        <a href="https://twitter.com/dlangemusic"><img src="imgs/Twitter.png" alt="Twitter Logo" class="social-icon"></a>
-        <p>&copy; 2016 David Lange.</p>
-      </footer>
-    </div>
-  </body>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>Imaginative | Hard-working | Diplomatic | Loyal | Kind</p>
+                <p>I'm a recent <a href="http://devbootcamp.com/">DevBootcamp</a> graduate in Full Stack Web Development. 
+                <p>I have experience with Ruby on Rails, HTML5/CSS, JavaScript, and am now learning Node.js and MongoDB.</p>
+                <p>Before making the leap, I worked with an Executive Search startup, <a href="http://www.eteamexecutivesearch.com/">eTeam Executive Search</a>, where I recruited executives in Analytics, Advertising, Marketing, Market Research, and Luxury.</p>
+                <p>What really excites me, is being able to think of an idea, work out how it can be achieved, and see it come to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Projects</h2>
+                    <a href="http://www.mentorship-app.com/" class="btn btn-default btn-lg">Mentorship</a>
+                    <a href="https://snapshort.herokuapp.com/" class="btn btn-default btn-lg">SnapShort</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Music</h2>
+                <p><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/229782745&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Lets Connect!</h2>
+                <p>Feel free to email me or connect via social media!</p>
+                <i class="fa fa-envelope-o fa-3x wow bounceIn"></i>
+                <p><a href="mailto:dlange8181@gmail.com">dlange8181@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://github.com/d-lange" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/davidlng" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                    </li>
+                    <li>
+                        <a href="DavidLangeResume.pdf" class="btn btn-default btn-lg"><span class="network-name">Resume</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; David Lange 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
 </html>
