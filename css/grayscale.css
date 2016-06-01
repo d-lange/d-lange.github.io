@@ -9,7 +9,8 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
+    /*background-color: #000;*/
+    background-color: #021e42;
 }
 
 html {
@@ -136,7 +137,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #021e42;
     }
 }
 
@@ -265,7 +266,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/Lindsay_michelle_bigsur_web2.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -305,8 +306,8 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -314,7 +315,7 @@ a:focus {
 .btn-default:focus {
     border: 1px solid #42dca3;
     outline: 0;
-    color: #000;
+    color: #fff;
     background-color: #42dca3;
 }
 
